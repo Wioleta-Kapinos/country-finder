@@ -19,7 +19,7 @@ function renederInfoOfCountry(name) {
     const info = name.map((el, i) => {
         return `<p class="country-capital"><b>Capital:</b> ${name[i].capital}</p>
        <p class="country-population"><b>Population:</b> ${name[i].population}</p>
-       <p class="country-languages"><b>Languages:</b> ${name[i].languages}</p>`
+       <p class="country-languages"><b>Languages:</b> ${Object.values(name[i].languages)}</p>`
    }).join("");
    countryInfo.innerHTML = info;
 }
@@ -35,6 +35,7 @@ const searchCountry = event => {
      .then((name) => {
         if (name.length > 10) {
             Notiflix.Notify.info("Too many matches found. Please enter a more specific name."); 
+            listOfCountries.innerHTML = "";
         } else if (name.length >= 2 && name.length <= 10) {
             renederListOfCountry(name);
             countryInfo.innerHTML = "";    
