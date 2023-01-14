@@ -36,7 +36,8 @@ const searchCountry = event => {
         if (name.length > 10) {
             Notiflix.Notify.info("Too many matches found. Please enter a more specific name."); 
         } else if (name.length >= 2 && name.length <= 10) {
-            renederListOfCountry(name);    
+            renederListOfCountry(name);
+            countryInfo.innerHTML = "";    
         } else if (name.length = 1) {
             renederInfoOfCountry(name);
         }
