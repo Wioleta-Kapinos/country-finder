@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
+  background-image: url("../images/globus.jpg");
   color: #212121;
   line-height: 1.5;
 }
@@ -18,7 +19,11 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
-
+.country-title {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
 .country-list {
   list-style-type: none;
   padding: 0;
