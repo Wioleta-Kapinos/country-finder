@@ -1,4 +1,4 @@
-https://wioleta-kapinos.github.io/goit-js-hw-10/
+https://wioleta-kapinos.github.io/country-finder/
 # Parcel template
 
 Этот проект был создан при помощи Parcel. Для знакомства и настройки
